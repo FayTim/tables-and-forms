@@ -8,7 +8,35 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form action="/pets/orders" method="post">
+<!--        <label>Тип питомца<br><input type="text" name="petType" required></label><br>-->
+        <label for="pet"> Тип питомца<br>
+            <select id="pet" name="petType" required>
+                <option>cat</option>
+                <option>dog</option>
+                <option>tiger</option>
+            </select>
+        </label><br>
+<!--        <label>Пол<br><input type="text" name="gender" required></label><br>-->
+        <label for="gender"> Пол<br>
+            <select id="gender" name="gender" required>
+                <option>boy</option>
+                <option>girl</option>
+                <option>none</option>
+            </select>
+        </label><br>
+        <label>Цвет глаз<br><input type="color" name="eyeColor" required></label><br>
+        <label>Длина хвоста<br><input type="number" min="7" max="120" name="tailLength" required></label><br>
+        <label>Имя<br><input type="text" name="name" required></label><br>
+        <label>Дата рождения<br><input type="date" name="dateOfBirth" required></label><br>
+        <label>Email<br><input type="email" name="email" required></label><br>
+        <label>Номер телефона<br><input type="tel" name="phone" required></label><br>
 
+        <label>Ознакомлен с правилами<input type="checkbox" value="true" name="rules" required checked></label><br>
+
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
     <!--Форму размещай тут-->
 
 </main>
