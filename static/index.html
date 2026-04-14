@@ -9,7 +9,6 @@
 <main>
     <h1>Найди себе друга!</h1>
     <form action="/pets/orders" method="post">
-<!--        <label>Тип питомца<br><input type="text" name="petType" required></label><br>-->
         <label for="pet"> Тип питомца<br>
             <select id="pet" name="petType" required>
                 <option>cat</option>
@@ -17,7 +16,6 @@
                 <option>tiger</option>
             </select>
         </label><br>
-<!--        <label>Пол<br><input type="text" name="gender" required></label><br>-->
         <label for="gender"> Пол<br>
             <select id="gender" name="gender" required>
                 <option>boy</option>
@@ -36,9 +34,10 @@
 
 
         <div>
-        <button type="reset">Сбросить</button>
-        <button type="submit">Зарегистрироваться</button>
-    </div>
+            <button type="reset">Сбросить</button>
+            <button type="submit">Зарегистрироваться</button>
+        </div>
+    </form>
 
 </main>
 </body>
